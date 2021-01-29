@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+
+</head>
+<body>
+
+<nav class="navbar-dark">
+
+    <ul class="navbar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/auth/register">Register</a>
+        </li>
+
+    </ul>
+
+</nav>
+<div class="container">
+
+    <% if(message){ %>
+        <h1 class="title">     <%= message %></h1>
+    <% } %>
+    <div class="login" style="margin-top: 100px">
+        <div class="log">
+            <form method="POST" action="/auth/login">
+                <div class="form-group">
+                    <label for="loginEmail">Email address</label>
+                    <p><input name="email" type="email" class="form-control" id="loginEmail" placeholder="Enter email"></p>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <p><input name="password" type="password" class="form-control" id="loginPassword" placeholder="Password"></p>
+                </div>
+                <button type="submit" class="btnlog">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

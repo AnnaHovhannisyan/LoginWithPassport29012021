@@ -1,0 +1,4 @@
+#ignor .env
+*.env
+#ignor node_modules
+/node_modules

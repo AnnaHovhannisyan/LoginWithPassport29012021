@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<body>
+
+<nav class="navbar-dark">
+
+    <ul class="navbar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/auth/login">Login</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<div class="container">
+
+    <% if(message){ %>
+            <h1 class="title">     <%= message %></h1>
+        <% } %>
+
+
+    <div class="register" style="margin-top: 100px;">
+
+        <form action="/auth/register" method="post" id="regForm">
+            <div class="form-group ">
+                <label for="usernameReg">UserName</label>
+                <p><input type="text" name="username" class="form-control" value="" id="usernameReg"></p>
+
+            </div>
+
+            <div class="form-group ">
+                <label for="useremailReg">Email</label>
+                <p><input type="text" name="email" class="form-control" value="" id="useremailReg"></p>
+
+            </div>
+            <div class="form-group">
+                <label for="userpasswordReg">Password</label>
+                <p><input type="password" name="password" class="form-control" value="" id="userpasswordReg"></p>
+
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" class="btn btn-default" value="Reset">
+            </div>
+            <p>Already have an account? <a href="/auth/login">Login here</a>.</p>
+            <p><a href="/auth/logout">LogOut</a></p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}*/
 #first{
   font-size:200px;
   color: #f0fff4;
@@ -38,9 +34,7 @@ color:#398696;
   margin:auto 50px;
 }
 .nav-item{
-  width:300px;
   display: flex;
- justify-content: center;
   margin:auto 50px;
   list-style-type: none;
 }
@@ -111,7 +105,6 @@ color:#398696;
   display:flex;
   justify-content: center;
   align-items: center;
-  /*background-attachment:scroll;*/
   background-repeat:no-repeat;
   background-size:cover;
 

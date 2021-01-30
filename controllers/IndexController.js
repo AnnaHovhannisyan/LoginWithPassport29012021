@@ -1,5 +1,4 @@
 const UserModel=require("../models/userModel");
-/*const {checkSign}=require('../middlewares/checkSign');*/
 const path=require('path');
 let fs=require('fs');
 
